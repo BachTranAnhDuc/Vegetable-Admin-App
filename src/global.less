@@ -39,19 +39,25 @@ ol {
   gap: 32px;
 }
 
-@media (max-width: 768px) {
-  .ant-table {
-    width: 100%;
-    overflow-x: auto;
-    &-thead > tr,
-    &-tbody > tr {
-      > th,
-      > td {
-        white-space: pre;
-        > span {
-          display: block;
-        }
+// @media (max-width: 768px) {
+.ant-table {
+  width: 100%;
+  overflow-x: auto;
+  &-thead > tr,
+  &-tbody > tr {
+    > th,
+    > td {
+      white-space: pre;
+      > span {
+        display: block;
       }
     }
+  }
+}
+// }
+
+.ant-table {
+  &-thead > tr {
+    background-color: blueviolet;
   }
 }
